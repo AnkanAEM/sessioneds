@@ -117,4 +117,4 @@ export default async function decorate(block) {
       }, HASH_SCROLL_POLL_INTERVAL_DELAY_IN_MILLI_SECONDS);
     }
   }
-}
+}
