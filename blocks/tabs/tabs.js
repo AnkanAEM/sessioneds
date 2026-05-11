@@ -1,11 +1,11 @@
-import { loadBlocks } from '../../scripts/lib-franklin.js';
+import { loadSections } from '../../scripts/aem.js';
 import { decorateMain } from '../../scripts/scripts.js';
 
 async function generateTabMainBlock(html) {
   const main = document.createElement('main');
   main.innerHTML = html;
   decorateMain(main);
-  await loadBlocks(main);
+  await loadSections(main);
   return main;
 }
 
