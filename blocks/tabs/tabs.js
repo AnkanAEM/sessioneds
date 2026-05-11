@@ -1,11 +1,11 @@
-import { loadSections } from '../../scripts/aem.js';
+import { loadBlocks } from '../../scripts/lib-franklin.js';
 import { decorateMain } from '../../scripts/scripts.js';
 
 async function generateTabMainBlock(html) {
   const main = document.createElement('main');
   main.innerHTML = html;
   decorateMain(main);
-  await loadSections(main);
+  await loadBlocks(main);
   return main;
 }
 
@@ -40,7 +40,7 @@ function generateHiddenInput(tabSectionIndex, presentTabContents, block) {
 
     if (
       (hashObj && hashObj.tabMatches(tabTitle, tabSectionIndex))
-        || ((!hashObj || !hashObj.tabsComponentMatches(tabSectionIndex)) && i === 0)
+      || ((!hashObj || !hashObj.tabsComponentMatches(tabSectionIndex)) && i === 0)
     ) {
       input.setAttribute('checked', true);
     }
