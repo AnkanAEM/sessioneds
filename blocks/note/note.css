@@ -11,7 +11,9 @@ main .note {
 
 main .note .icon {
     flex-shrink: 0;
+
     /* width: var(--font-size-body-m); */
+
     /* height: var(--font-size-body-m); */
     padding-top: 0.26rem;
 }
