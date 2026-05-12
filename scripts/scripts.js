@@ -137,7 +137,9 @@ async function loadEager(doc) {
   if (main) {
     decorateMain(main);
     document.body.classList.add('appear');
-    await loadSection(main.querySelector('.section'), waitForFirstImage);
+    const sections = [...main.querySelectorAll('.section')];
+    if (sections[0]) await loadSection(sections[0], waitForFirstImage);
+    if (sections[1] && sections[1].classList.contains('load-eager')) await loadSection(sections[1]);
   }
 
   try {
