@@ -119,12 +119,12 @@
 
                     &.prev {
                         left: 0;
-                        background: url("/media/icons/sprite-prev.png") center no-repeat;
+                        background: url("/icons/sprite-prev.png") center no-repeat;
                     }
 
                     &.next {
                         right: 0;
-                        background: url("/media/icons/sprite-next.png") center no-repeat;
+                        background: url("/icons/sprite-next.png") center no-repeat;
                     }
                 }
 
@@ -143,7 +143,7 @@
                     right: 5px;
                     width: 28px;
                     height: 28px;
-                    background: url('/media/icons/sprite.png') 17px -31px no-repeat;
+                    background: url('/icons/sprite.png') 17px -31px no-repeat;
                     cursor: pointer;
                     opacity: 0;
                     transition: opacity 0.3s ease, transform 0.3s ease;
@@ -183,7 +183,7 @@
                     position: absolute;
                     top: 50%;
                     transform: translateY(-50%);
-                    background: url("/media/icons/sprite.png") no-repeat;
+                    background: url("/icons/sprite.png") no-repeat;
                     border: none;
                     cursor: pointer;
                     padding: 5px;
@@ -255,7 +255,7 @@
                             color: transparent;
                             cursor: pointer;
                             padding: 0;
-                            background: url("/media/icons/sprite.png") no-repeat;
+                            background: url("/icons/sprite.png") no-repeat;
                             opacity: 0.8;
                             transition: opacity 0.3s ease;
 
@@ -306,7 +306,7 @@
                 }
 
                 .close-button {
-                    background: url("/media/icons/sprite.png") 2px 1px no-repeat;
+                    background: url("/icons/sprite.png") 2px 1px no-repeat;
                     color: transparent;
                     height: 30px;
                     width: 30px;
