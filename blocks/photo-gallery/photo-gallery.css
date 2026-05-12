@@ -14,7 +14,7 @@
         left: 50%;
         width: 40px;
         height: 40px;
-        background: url('/media/icons/more.png') center / cover;
+        background: url('/icons/more.png') center / cover;
         display: inline-block;
         transform: translate(-50%, -50%) scale(0);
         transition: transform 0.3s ease;
