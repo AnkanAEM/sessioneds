@@ -68,6 +68,15 @@ The repository provides the basic structure, blocks, and configuration needed to
 - Ensure accessibility standards (ARIA labels, proper heading hierarchy)
 - Follow AEM markup conventions for blocks and sections
 
+### Linting & Syntax Compliance (MANDATORY)
+Before generating any JavaScript or CSS code, you **MUST** read and adhere to the project's full linting configurations. These files are the "Source of Truth" for all syntax and formatting.
+- **JavaScript Standards:** Adhere to all rules in [eslint-full.json](eslint-full.json).
+- **CSS Standards:** Adhere to all rules in [stylelint-full.json](stylelint-full.json).
+- **Key Enforcement:** 
+    - Use modern space-separated `rgb(0 0 0 / 50%)` notation with **percentages** for alpha.
+    - Always include `.js` extensions in imports.
+    - Use **LF** line endings and ensure a **trailing newline** in every file.
+
 ## Key Concepts
 
 ### Content
