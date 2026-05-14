@@ -40,22 +40,6 @@
   transition: background-color 0.2s ease;
 }
 
-/* Zebra Striping */
-.table tbody tr:nth-child(even) {
-  background-color: rgb(0 0 0 / 2%);
-}
-
-/* Hover Effect */
-.table tbody tr:hover td {
-  background-color: rgb(59 99 251 / 5%); /* subtle link color tint */
-  color: var(--text-color);
-}
-
-.table th p,
-.table td p {
-  margin: 0;
-}
-
 /* Responsive Font Adjustments */
 @media (width >= 900px) {
   .table table {
@@ -80,4 +64,20 @@
 .table.bordered th,
 .table.bordered td {
   border: 1px solid #ddd;
-}
+}
+
+/* Zebra Striping */
+.table tbody tr:nth-child(even) {
+  background-color: rgb(0 0 0 / 2%);
+}
+
+/* Hover Effect */
+.table tbody tr:hover td {
+  background-color: rgb(59 99 251 / 5%); /* subtle link color tint */
+  color: var(--text-color);
+}
+
+.table th p,
+.table td p {
+  margin: 0;
+}
