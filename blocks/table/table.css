@@ -52,10 +52,6 @@
   display: none;
 }
 
-.table.no-header tbody tr:first-child td {
-  border-top: none;
-}
-
 /* Bordered Variant */
 .table.bordered {
   border: 1px solid #ddd;
@@ -71,10 +67,15 @@
   background-color: rgb(0 0 0 / 2%);
 }
 
-/* Hover Effect */
+/* Interactive States */
 .table tbody tr:hover td {
   background-color: rgb(59 99 251 / 5%); /* subtle link color tint */
   color: var(--text-color);
+}
+
+/* Complex Selectors (Specific row/cell targeting) */
+.table.no-header tbody tr:first-child td {
+  border-top: none;
 }
 
 .table th p,
