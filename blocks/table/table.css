@@ -1,67 +1,83 @@
 .table {
-    width: 100%;
-    overflow-x: auto;
+  width: 100%;
+  overflow-x: auto;
+  margin: 2rem 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  background: var(--background-color);
 }
 
 .table table {
-    width: 100%;
-    max-width: 100%;
-    border-collapse: collapse;
-    font-size: var(--body-font-size-xs);
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  font-size: var(--body-font-size-s);
+  line-height: 1.5;
 }
 
-@media (width >=600px) {
-    .table table {
-        font-size: var(--body-font-size-s);
-    }
+/* Header Styling */
+.table thead {
+  background-color: var(--light-color);
+  border-bottom: 2px solid var(--dark-color);
 }
 
-@media (width >=900px) {
-    .table table {
-        font-size: var(--body-font-size-m);
-    }
+.table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 700;
+  color: var(--text-color);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: var(--body-font-size-xs);
 }
 
-.table table thead tr {
-    border-top: 2px solid #dadada;
-    border-bottom: 2px solid #dadada;
+/* Body Styling */
+.table td {
+  padding: 1rem;
+  vertical-align: middle;
+  border-bottom: 1px solid #eee;
+  color: var(--dark-color);
+  transition: background-color 0.2s ease;
 }
 
-.table table tbody tr {
-    border-bottom: 1px solid #dadada;
+/* Zebra Striping */
+.table tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.02);
 }
 
-.table table th {
-    font-weight: 700;
+/* Hover Effect */
+.table tbody tr:hover td {
+  background-color: rgba(59, 99, 251, 0.05); /* subtle link color tint */
+  color: var(--text-color);
 }
 
-.table table th,
-.table table td {
-    padding: 0.5em;
-    text-align: left;
+.table th p,
+.table td p {
+  margin: 0;
 }
 
-.table table th p,
-.table table td p {
-    margin: 0;
+/* Responsive Font Adjustments */
+@media (width >= 900px) {
+  .table table {
+    font-size: var(--body-font-size-m);
+  }
 }
 
-.table table td p+p {
-    margin-top: 0.25em;
+/* No Header Variant */
+.table.no-header thead {
+  display: none;
 }
 
-/* no header variant */
-.table.no-header table tbody tr {
-    border-top: 1px solid #dadada;
+.table.no-header tbody tr:first-child td {
+  border-top: none;
 }
 
-/* striped variant */
-.table.striped tbody tr:nth-child(odd) {
-    background-color: var(--light-color);
+/* Bordered Variant */
+.table.bordered {
+  border: 1px solid #ddd;
 }
 
-/* bordered variant */
-.table.bordered table th,
-.table.bordered table td {
-    border: 1px solid #dadada;
-}
+.table.bordered th,
+.table.bordered td {
+  border: 1px solid #ddd;
+}
